@@ -1,7 +1,8 @@
 # Colory
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Colory.svg)](https://cocoapods.org/pods/Colory)
-[![License](https://img.shields.io/cocoapods/l/Colory.svg)](https://github.com/crazytonyli/Colory/blob/master/LICENSE)
+![Carthage](https://img.shields.io/badge/carthage-compatible-blue.svg)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/crazytonyli/Colory/blob/master/LICENSE)
 
 A `UIControl` for picking color from HSB color palette.
 
@@ -15,9 +16,13 @@ P.S. Gradient looks way smoother on device than this gif.
 
 To install Colory using [CocoaPods](https://cocoapods.org), add following line to your Podfile:
 
-```
-pod 'Colory'
-```
+    pod 'Colory'
+
+### Carthage
+
+To install Colory using [Carthage](https://github.com/Carthage/Carthage), add following line to your Cartfile:
+
+    github "crazytonyli/Colory"
 
 ## Usage
 
