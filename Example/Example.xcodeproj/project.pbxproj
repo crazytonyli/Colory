@@ -15,6 +15,23 @@
 		4A97148B1F73CD5D00718E21 /* Colory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A97148C1F73CD5D00718E21 /* Colory.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4A9714921F74EC9700718E21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A97148D1F74EC9700718E21 /* Colory.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AA7F4B11F72581A0032CB94;
+			remoteInfo = Colory;
+		};
+		4A9714941F74EC9700718E21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A97148D1F74EC9700718E21 /* Colory.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AA7F4BA1F72581A0032CB94;
+			remoteInfo = ColoryTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4A7C5CEA1F73CCB1007B4EB6 /* Colory Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colory Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7C5CED1F73CCB1007B4EB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +41,7 @@
 		4A7C5CF71F73CCB1007B4EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A7C5CF91F73CCB1007B4EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A97148C1F73CD5D00718E21 /* Colory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Colory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A97148D1F74EC9700718E21 /* Colory.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Colory.xcodeproj; path = ../Colory.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +59,7 @@
 		4A7C5CE11F73CCB1007B4EB6 = {
 			isa = PBXGroup;
 			children = (
+				4A97148D1F74EC9700718E21 /* Colory.xcodeproj */,
 				4A7C5CEC1F73CCB1007B4EB6 /* Example */,
 				4A7C5CEB1F73CCB1007B4EB6 /* Products */,
 				4A97148A1F73CD5D00718E21 /* Frameworks */,
@@ -74,6 +93,15 @@
 				4A97148C1F73CD5D00718E21 /* Colory.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A97148E1F74EC9700718E21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A9714931F74EC9700718E21 /* Colory.framework */,
+				4A9714951F74EC9700718E21 /* ColoryTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,12 +151,35 @@
 			mainGroup = 4A7C5CE11F73CCB1007B4EB6;
 			productRefGroup = 4A7C5CEB1F73CCB1007B4EB6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4A97148E1F74EC9700718E21 /* Products */;
+					ProjectRef = 4A97148D1F74EC9700718E21 /* Colory.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4A7C5CE91F73CCB1007B4EB6 /* Example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4A9714931F74EC9700718E21 /* Colory.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Colory.framework;
+			remoteRef = 4A9714921F74EC9700718E21 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A9714951F74EC9700718E21 /* ColoryTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ColoryTests.xctest;
+			remoteRef = 4A9714941F74EC9700718E21 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4A7C5CE81F73CCB1007B4EB6 /* Resources */ = {
