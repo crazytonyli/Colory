@@ -1,5 +1,7 @@
 # Colory
 
+![Swift 3, 4](https://img.shields.io/badge/Swift-3%2C%204-orange.svg)
+[![Build Status](https://img.shields.io/travis/crazytonyli/Colory.svg)](https://travis-ci.org/crazytonyli/Colory)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Colory.svg)](https://cocoapods.org/pods/Colory)
 ![Carthage](https://img.shields.io/badge/carthage-compatible-blue.svg)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/crazytonyli/Colory/blob/master/LICENSE)

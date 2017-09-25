@@ -17,17 +17,17 @@ import UIKit
 ///
 /// Register action with `valueChanged` event to receive picked color changes.
 public class ColorPickerView: UIControl {
-    private let paletteView: ColorPickerGradientView
-    private let hueLayer: CAGradientLayer
-    private let palettePicker: UIView
-    private let huePicker: UIView
+    fileprivate let paletteView: ColorPickerGradientView
+    fileprivate let hueLayer: CAGradientLayer
+    fileprivate let palettePicker: UIView
+    fileprivate let huePicker: UIView
 
     private var observations = [NSKeyValueObservation]() {
         didSet { oldValue.forEach { $0.invalidate() } }
     }
 
-    private weak var panGestureRecognizer: UIPanGestureRecognizer?
-    private var panGestureSession: ColorPickerPanSession?
+    fileprivate weak var panGestureRecognizer: UIPanGestureRecognizer?
+    fileprivate var panGestureSession: ColorPickerPanSession?
 
     private var _color = UIColor.white {
         didSet {
@@ -161,9 +161,9 @@ public class ColorPickerView: UIControl {
 }
 
 // MARK: - Actions
-extension ColorPickerView {
+fileprivate extension ColorPickerView {
 
-    @objc private func handle(pan: UIPanGestureRecognizer) {
+    @objc func handle(pan: UIPanGestureRecognizer) {
         switch pan.state {
         case .ended, .cancelled, .failed, .possible:
             panGestureSession = nil
@@ -186,7 +186,7 @@ extension ColorPickerView {
         }
     }
 
-    @objc private func handle(tap: UITapGestureRecognizer) {
+    @objc func handle(tap: UITapGestureRecognizer) {
         var changed = false
 
         if let index = (0..<tap.numberOfTouches).first(where: { paletteView.bounds.contains(tap.location(ofTouch: $0, in: paletteView)) }) {
@@ -222,8 +222,8 @@ extension ColorPickerView: UIGestureRecognizerDelegate {
 
 // MARK: - Private methods
 
-private extension ColorPickerView {
-    private var hue: CGFloat {
+fileprivate extension ColorPickerView {
+    var hue: CGFloat {
         return huePicker.layer.convert(CGPoint(x: huePicker.bounds.midX, y: 0), to: hueLayer).x / hueLayer.bounds.width
     }
 

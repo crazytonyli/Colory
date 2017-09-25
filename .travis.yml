@@ -1,0 +1,9 @@
+language: swift
+osx_image: xcode9
+before_install:
+    - gem install xcpretty
+script:
+    - xcodebuild build SWIFT_VERSION=4.0 | xcpretty
+    - xcodebuild build SWIFT_VERSION=3.0 | xcpretty
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
