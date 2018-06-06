@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = "Colory"
-  s.version = "0.1.3"
+  s.version = "0.1.4"
   s.summary = "A `UIControl` for picking color from HSB color palette."
   s.description = <<-DESC
   Straight forward UI and simple API, use target-action to receive color updates.
