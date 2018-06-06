@@ -114,7 +114,11 @@ public class ColorPickerView: UIControl {
     }
 
     override public var intrinsicContentSize: CGSize {
-        return CGSize(width: UIViewNoIntrinsicMetric, height: 200)
+        #if swift(>=4.2)
+            return CGSize(width: UIView.noIntrinsicMetric, height: 200)
+        #else
+            return CGSize(width: UIViewNoIntrinsicMetric, height: 200)
+        #endif
     }
 
     public override func sizeThatFits(_ size: CGSize) -> CGSize {
